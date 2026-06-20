@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>گالری مهدیس</title>
+
+
+<style>
+
+.welcome {
+  position: fixed;
+  inset: 0;
+  background: #111;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 45px;
+  z-index: 9999;
+
+  animation: hideWelcome 3s forwards;
+}
+
+
+@keyframes hideWelcome {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+.site {
+  opacity: 0;
+  animation: showSite 3s forwards;
+}
+
+
+@keyframes showSite {
+  100% {
+    opacity: 1;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Vazirmatn',sans-serif;
+    background:#17130f;
+    color:white;
+    min-height:100vh;
+
+}
+
+
+
+.top{
+
+    padding:60px 20px;
+    text-align:center;
+
+}
+
+
+.top h1{
+
+    font-size:65px;
+    color:#f5d28b;
+
+}
+
+
+.top p{
+
+    margin-top:15px;
+    font-size:22px;
+    color:#ddd;
+
+}
+
+
+
+.gallery{
+
+    display:grid;
+    grid-template-columns:repeat(3,300px);
+    justify-content:center;
+    gap:35px;
+    padding:50px 20px;
+
+}
+
+
+
+.box{
+
+    background:#251e18;
+    border-radius:30px;
+    overflow:hidden;
+    transition:.4s;
+    border:1px solid #ffffff20;
+
+}
+
+
+
+.box:hover{
+
+    transform:scale(1.08);
+    box-shadow:0 0 40px #f5d28b55;
+
+}
+
+
+
+.box img{
+
+    width:100%;
+    height:330px;
+    object-fit:cover;
+
+}
+
+
+
+.box h2{
+
+    text-align:center;
+    padding:25px;
+    color:#f5d28b;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+
+@media(max-width:900px){
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+}
+.logo{
+    text-align:center;
+    padding-top:30px;
+}
+
+.logo img{
+    width:180px;
+    max-width:70%;
+}
+.topbar {
+  height: 80px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.topbar {
+  height: 90px;
+  background: hsl(41, 77%, 14%);
+  display: flex;
+  align-items: center;
+  padding: 0 90px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-right: 90px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+}
+</style>
+
+</head>
+
+
+<body>
+    
+<div class="welcome">
+ ... خوش آمدید ...🌟
+</div>
+
+<div class="site">
+  
+
+<header class="topbar">
+
+
+
+  <nav>
+    
+  </nav>
+
+</header>
+
+<div class="top">
+
+<h1>گالری مهدیس 🎨</h1>
+
+<p>آثار هنری و دنیای من</p>
+
+</div>
+
+
+
+<div class="gallery">
+
+
+<a href="naghashi.html">
+
+<div class="box">
+
+<img src="./images/s2.jpg">
+
+<h2>نقاشیخط</h2>
+
+</div>
+
+</a>
+
+
+
+
+<a href="nastaliq.html">
+
+<div class="box">
+
+<img src="./images/s1.jpg">
+
+<h2>خط نستعلیق</h2>
+
+</div>
+
+</a>
+
+
+
+
+<a href="siah.html">
+
+<div class="box">
+
+<img src="./images/s1.webp">
+
+<h2>سیاه قلم</h2>
+
+</div>
+
+</a>
+
+
+</div>
+
+
+</div>
+</body>
+
+</html>
